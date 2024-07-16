@@ -1,0 +1,18 @@
+* {
+    border: 1px solid red;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+nav ul li {
+    margin: 0px 20px;
+}
