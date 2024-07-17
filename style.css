@@ -14,18 +14,28 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
+    margin: 0px 0px 0.8rem;
 }
 
 .section {
     border-bottom: 2px solid black;
+    padding: 0.4rem 0.4rem;
+}
+
+#contact-std {
+    display: block;
+}
+
+#contact-hid {
+    display: none;
 }
 
 /* Header Styling */
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid black;
 }
 
 header h1 {
@@ -34,12 +44,28 @@ header h1 {
 
 .link-list {
     list-style-type: none;
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
 }
 
 .link-list li {
-    margin: 0px 20px;
+    margin: 0 0.8rem;
 }
+
+.link-list a:hover {
+    color: #8f70ea;
+}
+
+/* Fixed Header Styling */
+
+header {
+    padding: 0.8rem ;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid black;
+}
+
+/* About Me Styling */
 
 #about-me {
     display: inline-flex;
@@ -48,11 +74,91 @@ header h1 {
 
 #about-me p {
     text-align: justify;
+    min-width: 350px;
 }
 
 #about-me img {
-    width: 300px;
+    width: 80%;
+    max-width: 12rem;
     height: auto;
-    margin: 0 12rem;
+    margin: 0 1rem;
     border: 2px solid black;
+}
+
+/* Projects/Skills Styling */
+
+.bulleted-list li {
+    margin-left: 1rem;
+}
+
+/* Contact Styling */
+
+#contact-hid .link-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact-hid img {
+    height: 50px;
+    width: auto;
+    margin: 0;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width:1500px) {
+    
+    header {
+        display: block;
+        text-align: center;
+    }
+    
+    header h1 {
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p, li, a {
+        font-size: 0.75rem;
+    }
+
+    #about-me {
+        display: block;
+        text-align: center;
+    }
+    
+    #about-me p {
+        text-align: justify;
+        min-width: 350px;
+    }
+    
+    #about-me img {
+        width: 80%;
+        max-width: 12rem;
+        height: auto;
+        margin: 0.8rem 1rem 0;
+        border: 2px solid black;
+    }
+
+    #contact-std {
+        display: none;
+    }
+
+    #contact-hid {
+        display: block;
+    }
+
+    #contact-hid img:hover {
+        content: url("./resources/x-mark.png");
+    }
 }
