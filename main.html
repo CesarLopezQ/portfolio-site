@@ -2,14 +2,12 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link href="reset.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <title>Cesar Enrique Lopez Quevedo</title>
     </head>
 
     <body>
-        <header>
-        <!-- Fixed Header -->
+        <header class="section">
             <h1>CESAR ENRIQUE LOPEZ QUEVEDO</h1>
             <nav>
                 <ul class="link-list">
@@ -23,42 +21,59 @@
 
         <main>
         <!-- Scrollable Section with Main Information -->
-            <div class="section>">
-                <h2>About Me</h2>
-                <div id="about-me">
-                    <p>
-                        I'm an Industrial Engineer with over 3 years of experience in the field. During these years I also studied programming, arriving at JS, HTML, and CSS as my main programming language.<br><br>
-                        This site is meant to compile projects made during my studies, as well as future workplace projects.
-                    </p>
-                    <img src="./resources/portrait.jpg">
+            <div id="about-me" class="section">
+                <div>
+                    <h2>About Me</h2>
+                    <div>
+                        <p>
+                            I'm an Industrial Engineer with over 3 years of experience in the field. During these years I also studied programming, arriving at JS, HTML, and CSS as my main programming language.<br><br>
+                            This site is meant to compile projects made during my studies, as well as future workplace projects.
+                        </p>
+                    </div>
                 </div>
+                <img src="./resources/portrait.jpg">
             </div>
 
             <div id="projects" class="section">
                 <h2>Projects</h2>
-                <ul>
-                    <li>Project 1</li>
-                    <li>Project 2</li>
-                    <li>Project 3</li>
+                <ul class="bulleted-list">
+                    <li>Today's Reccomendation</li>
+                    <li>Credit Card Checker</li>
+                    <li>Organism Starter</li>
+                    <li>Club Website</li>
+                    <li>The Legend of Zelda: Almanac</li>
+                    <li>Style Guide</li>
                 </ul>
             </div>
 
             <div id="skills" class="section">
                 <h2>Skills</h2>
-                <ul>
+                <ul class="bulleted-list">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
                 </ul>
             </div>
 
-            <div id="contact" class="section">
-                <h2>Contact</h2>
+            <!-- Contact Sections -->
+
+            <div id="contact-std" class="section">
+                <h2>Contact Information</h2>
                 <ul class="link-list">
-                    <li>email: cesarlopez99@live.com</li>
-                    <li>Phone: (+52) 664 165 5416</li>
+                    <li>email: <a href="mailto:cesarlopez99@live.com">cesarlopez99@live.com</a></li>
+                    <li>Phone: <a href="https://wa.me/526641655416">(+52) 664 165 5416</a></li>
                     <li><a href="https://www.linkedin.com/in/cesar-el-quevedo/">LinkedIn</a></li>
                     <li><a href="https://github.com/CesarLopezQ">GitHub</a></li>
+                </ul>
+            </div>
+
+            <div id="contact-hid" class="section">
+                <h2>Contact Information</h2>
+                <ul class="link-list">
+                    <li><a href="mailto:cesarlopez99@live.com"><img src="./resources/email.png"></a>
+                    <li><a href="https://wa.me/526641655416"><img src="./resources/phone.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/cesar-el-quevedo/"><img src="./resources/LinkedIn.png"></a></li>
+                    <li><a href="https://github.com/CesarLopezQ"><img src="./resources/GitHub.png"></a></li>
                 </ul>
             </div>
         </main>
